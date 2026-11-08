@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		{
+			"item": "sacos:bolsa"
+		},
+		{
+			"item": "minecraft:blaze_rod"
+		},
+		{
+			"item": "minecraft:blaze_rod"
+		},
+		{
+			"item": "minecraft:magma_block"
+		},
+		{
+			"item": "minecraft:magma_block"
+		}
+	],
+	"result": {
+		"id": "sacos:phora_bag",
+		"count": 1
+	}
+}

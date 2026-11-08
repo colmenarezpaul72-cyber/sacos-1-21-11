@@ -1,0 +1,31 @@
+SACOS DE DEDSAFIO 4 - Mod Fabric para Minecraft 1.21.1
+=====================================================
+
+Items (clic derecho para abrir):
+  - Bolsa      -> 27 espacios (3 filas x 9). Su contenido se guarda dentro del item.
+  - Ender Bag  -> abre tu ender chest (mismo contenido que el ender chest).
+  - Phora Bag  -> 54 espacios (6 filas x 9). Su contenido se guarda dentro del item.
+  Las bolsas no se pueden meter dentro de otras bolsas.
+
+Crafteos (se cambian en src/main/resources/data/sacos/recipe/):
+  - Bolsa: 1 hilo arriba en el centro + 5 cuero en forma de saco (  S  / L L / LLL )
+  - Ender Bag: Bolsa + Ender Chest (sin forma)
+  - Phora Bag: Bolsa + 2 blaze rod + 2 bloques de magma (sin forma)
+  Con /give tambien: /give @s sacos:bolsa , sacos:ender_bag , sacos:phora_bag
+
+COMO HACER EL .JAR
+------------------
+Opcion A - en tu PC (necesitas Java JDK 25, instalador "Temurin" de adoptium.net):
+  1. Descomprime este zip.
+  2. Abre una terminal DENTRO de la carpeta (en Windows: escribe cmd en la barra de la carpeta).
+  3. Windows:  gradlew build        Mac/Linux:  ./gradlew build
+  4. El mod queda en build/libs/ -> usa el .jar que NO termina en -sources.
+  (La primera vez tarda unos minutos porque descarga Minecraft y Fabric.)
+
+Opcion B - sin instalar nada (GitHub):
+  1. Crea una cuenta gratis en github.com y un repositorio nuevo.
+  2. Sube TODO el contenido de esta carpeta (incluida la carpeta oculta .github).
+  3. Pestana "Actions" -> espera a que termine -> abajo en "Artifacts" descarga el .jar.
+
+Para jugar necesitas Fabric Loader y Fabric API para Minecraft 1.21.1.
+Si al compilar sale un error, copiamelo y lo arreglo.
